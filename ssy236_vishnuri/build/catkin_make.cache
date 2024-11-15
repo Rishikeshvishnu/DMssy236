@@ -1,0 +1,2 @@
+navigation_pkg
+-DCATKIN_DEVEL_PREFIX=/home/user/exchange/ros/workspaces/ssy236_vishnuri/devel -DCMAKE_INSTALL_PREFIX=/home/user/exchange/ros/workspaces/ssy236_vishnuri/install -G Unix Makefiles
