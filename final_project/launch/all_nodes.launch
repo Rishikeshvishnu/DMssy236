@@ -1,0 +1,24 @@
+<launch>
+  <!-- Reasoning Node -->
+  <node pkg="final_project" type="reasoning_node" name="reasoning_node" output="screen" />
+
+  <!-- Knowledge Node -->
+  <node pkg="final_project" type="knowledge_node" name="knowledge_node" output="screen">
+    <param name="query_file" value="$(find final_project)/data/query_file.owl" />
+  </node>
+
+  <!-- Learning Node -->
+  <node pkg="final_project" type="learning_node.py" name="learning_node" output="screen" />
+
+  <!-- Perception Node -->
+  <node pkg="final_project" type="percept_node" name="percept_node" output="screen" />
+
+  <!-- Map Generator Node -->
+  <node pkg="final_project" type="map_generator_node" name="map_generator_node" output="screen" />
+
+  <!-- Tiago Control Node -->
+  <node pkg="final_project" type="tiago_control_node" name="tiago_control_node" output="screen" />
+
+  <!-- Tiago Arm Control Node -->
+  <node pkg="final_project" type="tiago_arm_control.py" name="tiago_arm_control" output="screen" />
+</launch>

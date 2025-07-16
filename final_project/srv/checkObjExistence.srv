@@ -1,0 +1,6 @@
+# To check if object exists and to send location and pose if it does
+string object_name
+---
+bool exists
+string location  
+geometry_msgs/Pose pose  
